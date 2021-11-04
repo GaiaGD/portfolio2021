@@ -12,6 +12,10 @@ body {
 opacity: 0;
 }
 
+.delete {
+  text-decoration: line-through;
+}
+
 .transition {
     -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 0.5s; /* Firefox < 16 */
