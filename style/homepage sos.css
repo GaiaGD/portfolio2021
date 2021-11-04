@@ -1,0 +1,199 @@
+body {
+  background: #081E42;
+  background-image: url(../img/hp/stars.svg);
+  background-repeat: repeat;
+  margin: 0;
+  color: #ffffff;
+  /* text-shadow: 1px 1px #020c1d; */
+  font-family: 'Playfair Display', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.delete {
+  text-decoration: line-through;
+}
+
+.project-white {
+  background-color: #ffffff
+}
+
+.project-white * {
+  color: #071E42;
+}
+
+.link-unstyled, .link-unstyled:link, .link-unstyled:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.mynav {
+  margin: 2%;
+}
+
+#about-nav img, #contact-nav img {
+  max-width: 120px;
+  padding: 5%;
+}
+
+#home-top-nav img {
+  max-width: 200px;
+}
+
+/* ---------- Container for the orbiting circles animation ---------- */
+#circle-orbit-container {
+  position: relative;
+  /* top: 20%;
+  left: 20%; */
+  height: 600px;
+  width: 600px;
+}
+
+/* ---------- Inner orbit - This is the circles closest to the central point ---------- */
+#inner-orbit {
+  z-index: 1;
+  position: absolute;
+  top: 125px;
+  left: 125px;
+  width: 350px;
+  height: 350px;
+  border: 2px #ffffff85 dashed;
+  border-radius: 100%;
+  -webkit-animation: spin-right 80s linear infinite;
+  animation: spin-right 80s linear infinite;
+}
+
+/* ---------- Repeating styles for the inner orbiting circles ---------- */
+.inner-orbit-circles {
+  animation: rotate 80s reverse linear infinite;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-image: url(/img/hp/code.svg);
+}
+
+/* ---------- Middle orbit - This is the circles second closest to the central point ---------- */
+#middle-orbit {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 500px;
+  height: 500px;
+  border: 2px #ffffff85 dashed;
+  border-radius: 100%;
+  -webkit-animation: spin-right 150s linear infinite;
+  animation: spin-right 150s linear infinite;
+}
+
+/* ---------- Repeating styles for the inner orbiting circles ---------- */
+.middle-orbit-circles {
+  animation: rotate 150s reverse linear infinite;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-image: url(/img/hp/design.svg);
+}
+
+.btn-outline-dark:not(:disabled):not(.disabled).active, .btn-outline-dark:not(:disabled):not(.disabled):active, .show>.btn-outline-dark.dropdown-toggle {
+  color: #fff;
+  background-color: #071E42;
+  border-color: #071E42;
+}
+
+.out-the-page {
+  top:-30px;
+}
+
+.footer {
+    margin-top: auto;
+    border-top: 0.5px rgba(255, 255, 255, 0.485) solid;
+}
+
+@media screen and (max-width: 600px) {
+  #circle-orbit-container {
+    height: 320px;
+    width: 320px;
+  }
+
+  /* ---------- Inner orbit - This is the circles closest to the central point ---------- */
+  #inner-orbit {
+    top: 65px;
+    left:65px;
+    width: 160px;
+    height: 160px;
+  }
+
+  /* ---------- Repeating styles for the inner orbiting circles ---------- */
+  .inner-orbit-circles {
+    top: 0px;
+    left: 0px;
+    height: 60px;
+    width: 60px;
+  }
+
+  /* ---------- Middle orbit - This is the circles second closest to the central point ---------- */
+  #middle-orbit {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 270px;
+    height: 270px;
+  }
+
+  /* ---------- Repeating styles for the inner orbiting circles ---------- */
+  .middle-orbit-circles {
+    top: 10px;
+    left: 10px;
+    height: 60px;
+    width: 60px;
+  }
+
+  #about-nav img, #contact-nav img {
+    max-width: 100px;
+    padding: 2%;
+  }
+
+  .mynav {
+    margin: 5% 0 5% 0;
+  }
+  /* #about-nav img, #contact-nav img {
+    max-width: 120px;
+    padding: 5%;
+  } */
+
+  #home-top-nav img {
+    padding: 0 10%;
+  }
+
+}
+
+
+/* ---------- Animation ---------- */
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#sun-center {
+  top: 32%;
+}
