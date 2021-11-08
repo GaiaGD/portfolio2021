@@ -1,4 +1,5 @@
 body {
+  height: 100vh;
   background: #081E42;
   background-image: url(../img/hp/stars.svg);
   background-repeat: repeat;

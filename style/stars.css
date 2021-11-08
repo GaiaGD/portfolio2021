@@ -1,0 +1,122 @@
+#back {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  }
+
+.star {
+  position: fixed;
+  background-color: white;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  animation-name: twinkle;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  }
+
+.star.small {
+  animation-duration: 5s;
+  }
+
+
+.one {
+  margin-top: 15%; 
+  margin-left: 60%;
+  }
+
+.two {
+   margin-top: 25%; 
+   margin-left: 65%;
+   }
+
+.three {
+   margin-top: 35%; 
+   margin-left: 70%;
+   }
+
+.four {
+   margin-top: 5%; 
+   margin-left: 10%;
+   }
+
+.five {
+   margin-top: 40%; 
+   margin-left: 20%;
+   }
+
+.six {
+   margin-top: 45%; 
+   margin-left: 90%;
+   }
+
+.seven {
+   margin-top: 30%; 
+   margin-left: 20%;
+   }
+
+.eight {
+   margin-top: 35%; 
+   margin-left: 35%;
+   }
+
+.nine {
+   margin-top: 25%; 
+   margin-left: 45%;
+   }
+
+.ten {
+  margin-top: 13%; 
+  margin-left: 66%;
+  }
+
+.eleven {
+   margin-top: 25%; 
+   margin-left: 65%;
+   }
+
+.twelve {
+   margin-top: 5%; 
+   margin-left: 7%;
+   }
+
+.thirteen {
+   margin-top: 5%; 
+   margin-left: 10%;
+   }
+
+.fourteen {
+   margin-top: 40%; 
+   margin-left: 20%;
+   }
+
+.fifteen {
+   margin-top: 25%; 
+   margin-left: 70%;
+   }
+
+.sixteen {
+   margin-top: 23%; 
+   margin-left: 25%;
+   }
+
+.seventeen {
+   margin-top: 32%; 
+   margin-left: 39%;
+   }
+
+.eighteen {
+   margin-top: 32%; 
+   margin-left: 21%;
+   }
+
+@keyframes twinkle {
+   20% {
+      transform: scale(0.5);
+      opacity: 0.5;
+      }
+   }
