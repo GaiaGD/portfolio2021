@@ -14,7 +14,7 @@
     let designJumeirah = "pages/designprojectssingle/jumeirah.html";
     let designAnatome = "pages/designprojectssingle/anatome.html";
     let designLeFenetres = "pages/designprojectssingle/lefenetres.html";
-    let designKidsCove = "pages/designprojectssingle/KidsCove.html";
+    let designKidsCove = "pages/designprojectssingle/kidsCove.html";
 
     // single pages CODING:
     let codingFBGD = "pages/codingprojectssingle/fbgd.html";

@@ -29,6 +29,10 @@ opacity: 0;
             animation: fadein 0.8s;
 }
 
+.img-grid {
+    height: 250px;
+}
+
 .project-white {
   background-color: #ffffff
 }
