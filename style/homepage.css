@@ -9,6 +9,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.about h4, .contact h4 {
+  line-height: 1.5;
+}
+
 .sans {
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -20,6 +24,8 @@ opacity: 0;
 .delete {
   text-decoration: line-through;
 }
+
+
 
 .transition {
     -webkit-animation: fadein 0.8s; /* Safari, Chrome and Opera > 12.1 */
@@ -37,6 +43,10 @@ opacity: 0;
 
 .project-white {
   background-color: #ffffff
+}
+
+.project-bitBlue {
+  background-color: #081e42ab;
 }
 
 .project-white * {
